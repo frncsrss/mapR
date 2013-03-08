@@ -4,6 +4,7 @@ sapply(small.ints, function(x) x^2)
 
 # compute the first 1000 squares with Hadoop (HDFS + MapReduce)
 library(rhdfs)
+hdfs.init()
 library(rmr2)
 small.ints = to.dfs(1:1000)
 from.dfs(
